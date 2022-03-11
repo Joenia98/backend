@@ -1,9 +1,9 @@
 ## backend-about
 Este es una API de Graphql Conectada a una base de datos no sql ('mongo db') en la que realizaran distintas funciones descritas a continuacion:
 
-##Querys
+<h1>Querys</h1>
 
-#'users'
+<h2>'users'</h2>
 
 query{
   users{
@@ -16,7 +16,7 @@ query{
 
 Esta linea de codigo mostramos una lista de usuarios que se han registrado en la base de datos
 
-#'user'
+<h2>'user'</h2>
 
 query{
   user(id:""){
@@ -29,7 +29,7 @@ query{
 
 En esta se buscara un usuario acorde a su id
 
-#'employees'
+<h2>'employees'</h2>
 
 query{
   employees{
@@ -46,7 +46,7 @@ query{
 
 En esta query retorna la lista de empleados registrados hasta el momento
 
-#'employee_by_id'
+<h2>'employee_by_id'</h2>
 
 query{
  employee_by_id(id:"")
@@ -74,8 +74,9 @@ En esta funcion retorna un employee tomando en cuenta su id adicionalmente las s
   Tomando en cuenta cada atributo de employee
   
   
-##Mutations
-#register
+<h1>Mutations</h1>
+  
+<h2>register</h2>
   
   register(
     username:"",
@@ -85,13 +86,13 @@ En esta funcion retorna un employee tomando en cuenta su id adicionalmente las s
   
   Registra a un nuevo usuario
   
-#login
+<h2>login</h2>
   
 login(email:"",gpassword: "")
 
 Se planteaba usar este para manejar el login junto con jsonWebToken
 
-#createEmployee
+<h2>createEmployee</h2>
 
 createEmployee(
   name:"",
@@ -105,7 +106,7 @@ createEmployee(
 Mutation plamteada para la creacion de los empleados
 
 
-#updateEmployee
+<h2>updateEmployee</h2>
 
 updateEmployee(
   id:"",
@@ -126,7 +127,7 @@ updateEmployee(
   
   Mutation para la modificacion de los empleados
   
-  #deleteEmployee
+  <h2>deleteEmployee</h2>
   
   deleteEmployee(id:"")
   
