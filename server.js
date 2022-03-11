@@ -15,6 +15,7 @@ app.use(
   })
 );
 
-app.listen(3100);
+app.set('port', process.env.PORT || 3100);
 
-console.log("Server is runing on port 3100");
+app.listen(app.get('port'));
+
