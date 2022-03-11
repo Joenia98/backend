@@ -2,6 +2,7 @@
 Este es una API de Graphql Conectada a una base de datos no sql ('mongo db') en la que realizaran distintas funciones descritas a continuacion:
 
 ##Querys
+
 #'users'
 
 query{
